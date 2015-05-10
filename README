@@ -1,0 +1,39 @@
+
+author:
+
+
+Install:
+ 3rd party python libraries
+ from command prompt type  ...
+ easy_install numpy
+ easy_install pandas
+ easy_install nosetests
+
+
+
+HowTo:
+
+usage: conway.py [-h] -f FILE [-N GENERATIONS] -o OUTPUT
+
+Conway AlphaGen
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -f FILE, --file FILE  Input file for initial positions
+  -N GENERATIONS, --numgen GENERATIONS
+                        Number of generations to run
+  -o OUTPUT, --output OUTPUT
+                        Output file
+
+
+open command prompt and type
+cd conway
+python conway.py -f input.tsv -N 4 -o output.tsv
+
+
+
+
+Run Tests:
+cd conway tests
+nosetests -v --nocapture simple.py
+
